@@ -1,8 +1,8 @@
 // =================================================================
 //
 // File: activity.h
-// Author:
-// Date:
+// Author: Ricardo Sierra Roa - A01709887
+// Date: 15/08/2023
 //
 // =================================================================
 #ifndef ACTIVITY_H
@@ -14,10 +14,15 @@
 //
 // @param n	The maximum limit of the sum.
 // @return	The result of the addition from 1 to n.
-// @Complexity	??
+// @Complexity	O(n)
 // =================================================================
 unsigned int sumaIterativa(unsigned int n) {
-	return 0;
+	int sum = 0, aux = n;
+    for(int i=0; i<n; i++){
+        sum += aux;
+        aux -= 1;
+    }
+    return sum;
 }
 
 // =================================================================
@@ -26,10 +31,14 @@ unsigned int sumaIterativa(unsigned int n) {
 //
 // @param n	The maximum limit of the sum.
 // @return	The result of the addition from 1 to n.
-// @Complexity	??
+// @Complexity	O(n)
 // =================================================================
 unsigned int sumaRecursiva(unsigned int n) {
-	return 0;
+	if(n == 1){
+        return 1;
+    }else{
+        return n + sumaRecursiva(n-1);   
+    }
 }
 
 // =================================================================
@@ -38,10 +47,11 @@ unsigned int sumaRecursiva(unsigned int n) {
 //
 // @param n	The maximum limit of the sum.
 // @return	The result of the addition from 1 to n.
-// @Complexity	??
+// @Complexity	O(1)
 // =================================================================
 unsigned int sumaDirecta(unsigned int n) {
-	return 0;
+	//Formula Gauss
+    return (n*(n+1))/2;
 }
 
 #endif /* ACTIVITY_H */
