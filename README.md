@@ -6,8 +6,8 @@ En este repositorio de trabajo encontrarás el archivo "activity.h". En este arc
 ```
 // =========================================================
 // File: activity.h
-// Author: Edward Elric - A00123456
-// Date: 01/01/2021
+// Author: Ricardo Sierra Roa - A01709887
+// Date: 15/08/2023
 // =========================================================
 ```
 Implementa, <span style="text-decoration-line: underline;">forma individual</span>, las diferentes versiones de una sumatora de **1 hasta n** y llame a tres funciones:
